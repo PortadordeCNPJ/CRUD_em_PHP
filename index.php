@@ -51,6 +51,7 @@
             <div class="col mt-5">
 
                 <?php
+                //Puxando as páginas dos links da Nav Bar
                 include("config.php");
                 switch (@$_REQUEST["page"]) {
                     case "novo":

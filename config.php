@@ -1,4 +1,6 @@
 <?php 
+
+//criação de conecção para o arquivo config.php
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
