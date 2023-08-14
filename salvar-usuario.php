@@ -6,7 +6,7 @@ switch ($_REQUEST["acao"]) {
         $senha = $_POST["senha"];
         $data_nascimento = $_POST["data_nascimento"];
 
-        $sql = "INSERT INTO usuario (nome, email, senha, data_nascimento)" VALUES ()
+        $sql = "INSERT INTO usuario (nome, email, senha, data_nascimento)" VALUES ( '{$nome}', '{$email}', '{$senha}', '{$data_nascimento}',)"
         break;
 
     case 'editar':
