@@ -14,8 +14,8 @@
         <input type="password" name="senha" required="required" class="form-control" id="senha">
     </div>
     <div class="mb-3">
-        <label for="data_nascimento">Data de Nascimento</label>
-        <input type="date" name="data_nascimento" required="required" class="form-control" id="data_nascimento">
+        <label for="data_nasc">Data de Nascimento</label>
+        <input type="date" name="data_nasc" required="required" class="form-control" id="data_nasc">
     </div>
     <div class="mb-3">
         <button type="submit" class="btn btn-primary">Enviar</button>
