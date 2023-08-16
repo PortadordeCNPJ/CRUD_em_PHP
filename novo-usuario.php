@@ -1,4 +1,7 @@
- <h1>Novo usuário</h1>
+
+<!-- Formulario que ira receber as informações do usuário para ser cadastrado-->
+
+<h1>Novo usuário</h1>
 <form action="?page=salvar" method="post">
     <input type="hidden" name="acao" value="cadastrar">
     <div class="mb-3">

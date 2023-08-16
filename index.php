@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+<!-- nav bar pega do bootstrap para economizar tempo né, tempo é dinheiro-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Cadastro</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,6 +52,8 @@
 
                 <?php
                 //Puxando as páginas dos links da Nav Bar
+
+                //Cada case puxa a respequitiva pagina pelo seu link. Ex: href='?page=novo'
                 include("config.php");
                 switch (@$_REQUEST["page"]) {
                     case "novo":
@@ -62,6 +64,10 @@
                         break;
                     case "salvar":
                         include("salvar-usuario.php");
+                        break;
+                    case "editar":
+                        include("editar-usuario.php");
+                        break;
                     default:
                         echo "<h1>Bem vindos!</h1>";
                         break;
