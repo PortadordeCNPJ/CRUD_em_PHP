@@ -35,7 +35,7 @@ if ($qtd > 0) {
         //Aqui é passado um evento em JavaScript, assim toda vez que o botão de editar for pressionado ele levara para a tela de edição de usuario
         print "<td><button onclick=\"location.href='?page=editar&id=". $row->id ."';\" class='btn-success'>Editar</button>
         
-        <button onclick=\"is(confirm('Tem certeza que deseja excuir?')){location.href='?page=salvar&acao=excluir&id=". $row->id ."'};\" class='btn-danger'>Excluir</button> </td>";
+        <button onclick=\"if(confirm('Tem certeza que deseja excuir?')){location.href='?page=salvar&acao=excluir&id=". $row->id ."'};\" class='btn-danger'>Excluir</button> </td>";
         //Aqui é passado um evento em JavaScript, assim toda vez que o botão de excluir for pressionado ele levara para a tela de exclusão de usuario
             print "</tr>";
     }

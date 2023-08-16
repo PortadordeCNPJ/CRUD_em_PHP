@@ -71,7 +71,6 @@ switch ($_REQUEST["acao"]) {
         //Pega o ID do usuario cadastrado no banco e o Excuir
         $sql = "DELETE FROM usuarios WHERE id=" . $_REQUEST["id"];
 
-
         //Variavel de resultado, passando pela conecção do arquivo config.php, após isso é feita a execução da query, que é o ($sql)
         $res = $conn->query($sql);
 
